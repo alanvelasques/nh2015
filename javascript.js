@@ -22,10 +22,10 @@ $('#footer-menu li a').on('click', function(event) {
 
 $('#buscar_caminho').on('click', function(e) {
     e.preventdefault()
-    if (navigator.geolocation) { 
+    if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
 
-        var point = new google.maps.LatLng(position.coords.latitude, 
+        var point = new google.maps.LatLng(position.coords.latitude,
                                     position.coords.longitude);
         calcRoute(point);
         });
@@ -47,8 +47,8 @@ $('.schedule-tbl a').on('click', function(event) {
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 var map;
-var latitude = -30.0351002;
-var longitude = -51.2265906;
+var latitude = -29.681397;
+var longitude = -51.125743;
 var ftec = new google.maps.LatLng(latitude, longitude);
 directionsDisplay = new google.maps.DirectionsRenderer();
 var mapOptions = {
@@ -67,7 +67,7 @@ directionsDisplay.setPanel(document.getElementById('directions-panel'));
 var marker = new google.maps.Marker({
               position: ftec,
               map: map,
-              title:"FTEC Caxias do Sul"
+              title:"FTEC Novo Hamburgo"
 });
 
 function calcRoute(starte) {
@@ -102,7 +102,7 @@ google.maps.event.addListener(autocomplete, 'place_changed', function() {
 
 document.getElementById("search-route").addEventListener("keypress", function(e){
     if (e.keyCode == 13) {
-        calcRoute(); 
+        calcRoute();
         return false;
     }
 });
