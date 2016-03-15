@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TcheLinux Novo Hamburgo - 2015</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<!-- OpenGraph -->
+	<meta property="og:image" content="http://tchelinux.org/assets/tchelinux-facebook.png">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style type="text/css">
+          html { height: 100% }
+          body { height: 100%; margin: 0; padding: 0 }
+          #map_canvas { height: 100% ; margin: 0 auto 0 auto; width: 80%; }
+        </style>
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                 <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">TcheLinux</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="main-navbar">
+                      <ul class="nav navbar-nav">
+                        <li style="display:none;"><a href="#sobre">Sobre</a></li>
+                        <li><a href="#inscricao">Inscri&ccedil;&otilde;es</a></li>
+                        <li><a href="#programacao">Programa&ccedil;&atilde;o</a></li>
+                        <li><a href="#palestras">Palestras</a></li>
+                        <li><a href="#local">Local</a></li>
+                        <li><a href="#apoio">Apoio</a></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+
+            </div>
+        </nav>
+        <header class="header">
+          <div class="wrapper">
+            <h1 class="logo-name">
+              <a class="logo-link" href="#" title="TcheLinux Novo Hamburgo" itemprop="name">TcheLinux <br/>Novo Hamburgo</a>
+            </h1>
+            <h2 class="tagline">22 de Agosto de 2015, Faculdade FTEC Novo Hamburgo</h2>
+          </div>
+        </header>
+        <section id="sobre">
+            <div class ="container">
+            <h2 class="subtitle">Sobre o Evento</h2>
+            <p>
+                O grupo de usu&aacute;rios de Software Livre TcheLinux, em parceria com a Faculdade FTEC Novo Hamburgo, tem o prazer de convidar a comunidade, independente do n&iacute;vel de conhecimento e experi&ecirc;ncia com tecnologia, software livre e &aacute;reas afins, para participar do Semin&aacute;rio de Tecnologia em Software Livre TcheLinux.
+            </p>
+            <p>
+                O evento ocorrerá no dia 22 de Agosto na Faculdade FTEC Novo Hamburgo.
+            </p>
+            <!--<h2 class="subtitle">Chamada de palestras</h2>
+            <p>
+              <span>Se você é um gênio, um programador incrível, um designer sensacional, um empresário de sucesso ou mesmo um simples usuário de software livre disposto a compartilhar o seu conhecimento com os outros, venha palestrar no Tchê Linux de Novo Hamburgo. </span><a target="_blank" href="https://goo.gl/Oyxqel">Clique aqui e submeta a sua palestra</a><br>
+              <span>Mas corra pois a chamada ficará aberta apenas até dia 10/08</span>
+            </p> -->
+            </div>
+        </section>
+        <section id="inscricao">
+          <div class="container">
+
+            <h2 class="subtitle">Inscri&ccedil;&otilde;es</h2>
+            <p>
+                <a target="_blank" href="https://goo.gl/PBkcGD">Faça sua inscri&ccedil;&atilde;o agora mesmo!</a>
+            </p>
+            <p>
+                A participa&ccedil;&atilde;o no evento &eacute; gratuita por&eacute;m os participantes s&atilde;o incentivados a trazer 2kg de alimentos n&atilde;o perec&iacute;veis (exceto sal) que ser&atilde;o doados a institui&ccedil;&otilde;es de caridade.
+            </p>
+            <p>
+                Os alimentos ser&atilde;o recebidos no momento do credenciamento.
+            </p>
+          </div>
+        </section>
+        <section id="programacao">
+        <div class="container">
+          <h2 class="subtitle">Programa&ccedil;&atilde;o</h2>
+            <p>A grade de programa&ccedil;&atilde;o ser&aacute;
+            preenchida a medida que as palestras forem confirmadas.
+            Hor&aacute;rios de palestras podem ser alterados para
+            acomodar restri&ccedil;&otilde;es dos palestrantes.</p>
+            <div class="schedule-tbl">
+              <table class="table table-responsive">
+                <thead>
+                  <tr>
+                    <th class="schedule-time">Hor&aacute;rio</th>
+                    <th class="schedule-empty">Sala 1</th>
+                    <th class="schedule-empty">Sala 2</th>
+                    <th class="schedule-empty">Sala 3</th>
+                    <th class="schedule-empty">Robótica</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="schedule-other">
+                    <td class="schedule-time">8h</td>
+
+                <td class="schedule-slot" colspan="4" style="text-align:left">
+                    Recep&ccedil;&atilde;o / Credenciamento</td>
+                  </tr>
+
+                  <tr class="schedule-other">
+                    <td class="schedule-time">8h30</td>
+                    <td class="schedule-slot" colspan="4" style="text-align:left">
+                        Abertura
+                        <a href="#speech-1">
+                        <span class="description">
+                          Palestra: Aplicações de Inteligência Artificial a Sistemas de Educação
+                        </span></a>
+                        <span class="speaker">
+                            <a href="#speech-1">Rosa Vicari</a>
+                        </span>
+                    </td>
+                  </tr>
+                  <tr class="schedule-other">
+                    <td class="schedule-time">9h30</td>
+                    <td class="schedule-slot">
+                            <a href="#speech-2">
+                            <span class="description">
+                                Empreendedorismo e Tecnologias Educacionais
+                            </span></a>
+                            <span class="speaker">
+                                <a href="#speech-2">Luiz Rossi</a>
+                            </span>
+                    </td>
+                    <td class="schedule-slot">
+                            <a href="#speech-3">
+                            <span class="description">
+                            Controlando sua casa com Python e Arduíno
+                            </span></a>
+                            <span class="speaker">
+                                <a href="#speech-3">Relsi Maron</a>
+                            </span>
+                    </td>
+                    <td class="schedule-slot">
+                            <a href="#speech-9">
+                            <span class="description">
+                            Conheça o Openstack - A plataforma aberta para a criação de nuvens
+                            </span></a>
+                            <span class="speaker">
+                                <a href="#speech-9">Marcelo Dieder</a>
+                            </span>
+                    </td>
+                    <td class="schedule-slot">
+                            <a href="#robotica-1">
+                            <span class="description">
+                            Mostra de robótica livre (durante todo o evento)
+                            </span></a>
+                            <span class="speaker">
+                                <a href="#robotica-1">Equipe Robótica</a>
+                            </span>
+                    </td>
+                  </tr>
+                  <tr class="schedule-other">
+                    <td class="schedule-time">10h10</td>
+                    <td class="schedule-slot" colspan="3" style="text-align:left">
+                        Coffe Break</td>
+                      </tr>
+                  </tr>
+                  <tr class="schedule-other">
+                    <td class="schedule-time">10h30</td>
+                    <td class="schedule-slot">
+                            <a href="#speech-5">
+                            <span class="description">
+                            Pythonificando a Universidade
+                            </span></a>
+                            <span class="speaker">
+                                <a href="#speech-5">Matheus Pereira</a>
+                            </span>
+                    </td>
+                    <td class="schedule-slot">
+                            <a href="#speech-6">
+                            <span class="description">
+                            Aproveite o Software e/ou Hardware Livre na Academia e/ou Trabalho
+                            </span></a>
+                            <span class="speaker">
+                                <a href="#speech-6">Luiz Rauber</a>
+                            </span>
+                    </td>
+                    <td class="schedule-slot">
+                            <a href="#speech-7">
+                            <span class="description">
+                            Tradução do Debian para Português do Brasil
+                            </span></a>
+                            <span class="speaker">
+                                <a href="#speech-7">Adriano Gomes</a>
+                            </span>
+                    </td>
+                    <td class="schedule-slot">
+                            <a href="#robotica-2">
+                            <span class="description">
+                            CTA: Infraestrutura para Expansão do Conhecimento
+                            </span></a>
+                            <span class="speaker">
+                                <a href="#robotica-2">Equipe Robótica</a>
+                            </span>
+                    </td>
+                  </tr>
+                  <tr class="schedule-other">
+                    <td class="schedule-time">11h10</td>
+                    <td class="schedule-slot">
+                            <a href="#speech-8">
+                            <span class="description">
+                            NoSQL no mundo da persistencia poliglota
+                            </span></a>
+                            <span class="speaker">
+                                <a href="#speech-8">Waldemar Neto</a>
+                            </span>
+                    </td>
+                    <td class="schedule-slot">
+                            <a href="#speech-4">
+                            <span class="description">
+                            Software Livre: Socialmente Justo, Economicamente Viável e Tecnologicamente Sustentável
+                            </span></a>
+                            <span class="speaker">
+                                <a href="#speech-4">Clayton Dausacker</a>
+                            </span>
+                    </td>
+                    <td class="schedule-slot">
+                            <a href="#speech-10">
+                            <span class="description">
+                            O Servidor FTP - Sistema Operacional Linux Centos 6.0
+                            </span></a>
+                            <span class="speaker">
+                                <a href="#speech-10">Ercio Berna</a>
+                            </span>
+                    </td>
+                    <td class="schedule-slot">
+                            <a href="#robotica-3">
+                            <span class="description">
+                            Modelagem 3D com Freecad
+                            </span></a>
+                            <span class="speaker">
+                                <a href="#robotica-3">Equipe Robótica</a>
+                            </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="schedule-time">11h50</td>
+                    <td class="schedule-slot" colspan="6" style="text-align:left">
+                            <span class="description">Encerramento</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section id="palestras">
+        <div class="container">
+          <h2 class="subtitle">Palestras</h2>
+          <div id="speech-1" class=speech-container>
+            <span class="speech-time">8h30</span>
+            <div class="speech-info">
+                <h3 class="speech-title">
+                Aplicações de Inteligência Artificial a Sistemas de Educação</h3>
+                <span class="speech-description">
+                A atividade consiste em dar uma palestra sobre Aplicações da Inteligência Artificial em sistemas Educacionais,
+                no âmbito das atividades do TchêLinux na FTEC.
+                </span>
+                <h3 class="speaker-name">Rosa Vicari</h3>
+                <span class="speaker-bio">
+                Rosa Maria Vicari PhD em engenharia Eletrotécnica e computadores pela Universidade de Coimbra - Portugal 1990.
+                Professora do Instituto de Informática da UFRGS. Coordenadora da Cátedra UNESCO em TICS, na UFRGS.
+                Áreas de Interesse Inteligência Artificial e sistemas educacionais.
+                </span>
+            </div>
+          <div id="speech-2" class=speech-container>
+            <span class="speech-time">9h30</span>
+            <div class="speech-info">
+                <h3 class="speech-title">
+                Empreendedorismo e Tecnologias Educacionais</h3>
+                <span class="speech-description">
+                Luiz Henrique Longhi Rossi é um empreendedor no novo mercado de sofwares educacionais e contará um pouco sobre atitudes
+                empreendedoras, como uma pequena empresa pode fazer um planejamento estratégico e um pouco sobre a inovação na área das
+                tecnologias educacionais.
+                </span>
+                <h3 class="speaker-name">Luiz Rossi</h3>
+                <span class="speaker-bio">
+                Luiz Henrique Longhi Rossi é doutorando em computação da UFRGS no grupo de Inteligência Artificial, trabalha com pesquisa desde 2004,
+                coordenou a equipe itinerante do MEC na formação de professores no projeto "um computador por aluno" em todo Brasil.
+                </span>
+            </div>
+          </div>
+          <div id="speech-3" class=speech-container>
+            <span class="speech-time">9h30</span>
+            <div class="speech-info">
+                <h3 class="speech-title">
+                Controlando sua casa com Python e Arduino</h3>
+                <span class="speech-description">
+                Nessa palestra será apresentado como desenvolver aplicações em Python que conversem com o Arduino, local e remotamente,
+                além de mostrar exemplos práticos e ferramentas.
+                </span>
+                <h3 class="speaker-name">Relsi Maron</h3>
+                <span class="speaker-bio">
+                Desenvolvedor web. Co-fundador do CodeFreelas. Membro do PyTchê e do Matehackers.
+                Atualmente trabalhando no desenvolvimento de soluções abertas para automação e robótica.
+                </span>
+            </div>
+          </div>
+          <div id="speech-9" class=speech-container>
+            <span class="speech-time">9h30</span>
+            <div class="speech-info">
+                <h3 class="speech-title">Conheça o Openstack - A plataforma aberta para a criação de nuvens</h3>
+                <span class="speech-description">
+                Nesta palestra o projeto Openstack será apresentando, mostrando os seus componentes e explicando de que
+                forma ele poder ser utilizado para a criação de uma nuvem pública e ou privada. No final da palestra será
+                apresando uma lab de demostração da plataforma.
+                </span>
+                <h3 class="speaker-name">Marcelo Dieder</h3>
+                <span class="speaker-bio">
+                Marcelo Dieder é embaixador do Openstack na América Latina. Também é o fundador da comunidade Openstack no Brasil.
+                Já palestrou em eventos nacionais e internacionais. É formado em Segurança da Informação pela Unisinos como uma pós em
+                Administração de TI. Atualmente trabalha como Coordenador de Segurança da Informação no Santander Getnet.
+                </span>
+            </div>
+          </div>
+          <div id="speech-5" class=speech-container>
+            <span class="speech-time">10h30</span>
+            <div class="speech-info">
+                <h3 class="speech-title">Pythonificando a Universidade</h3>
+                <span class="speech-description">
+                O objetivo da palestra é abordar as principais características de Python trazendo um panorama de sua utilização nas universidades.
+                A versatilidade de Python será demonstrada através da apresentação de trabalhos desenvolvidos no curso de Ciência da Computação da
+                Universidade de Caxias do Sul, passando por implementações de grafos, redes, com sockets e sniffer, inteligência artificial com
+                redes neurais e algoritmos genéticos, sistemas distribuídos e computação gráfica, todos de código aberto, disponíveis no github e bitbucket.
+                </span>
+                <h3 class="speaker-name">Matheus Pereira</h3>
+                <span class="speaker-bio">
+                Mestrando em Inteligência Artificial na UFRGS, bacharel em Ciência da Computação pela UCS,
+                desenvolvedor de software, programador Python/Zope/Plone, professor, pesquisador e entusiasta
+                de conhecimento compartilhado e software livre.
+                </span>
+            </div>
+          </div>
+          <div id="speech-6" class=speech-container>
+            <span class="speech-time">10h30</span>
+            <div class="speech-info">
+                <h3 class="speech-title">Aproveite o Software e/ou Hardware Livre na Academia e/ou Trabalho</h3>
+                <span class="speech-description">
+                E aí a pessoa tá na adolescência ou já prestes ao vestibular e ñ tem ideia do que fazer na academia e na graduação.
+                Escolhe TI e tá "refazendo a roda" e "desmotivado" com a escolha, pior, quase ao final e ainda sem assunto para o TCC
+                (Trabalho de Conclusão de Curso). Paralelamente (ou se ñ quis fazer uma graduação), tá no A-B-C sem sentido e/ou
+                estagnado profissionalmente. E se eu te disser que Software e/ou Hardware Livre pode resolver teus problemas, acredita?
+                </span>
+                <h3 class="speaker-name">Luiz Rauber</h3>
+                <span class="speaker-bio">
+                  Profissional liberal, ou consultor, ou algo que valha em assuntos relacionados a tecnologica.
+                  Agita por aí sobre as temáticas de Software Livre, Hardware Livre, Consciência Ágil e Startups.
+                  Tem mestrado em Nanociências na linha de Modelagem e Simulação (UNIFRA), especialização em Gerenciamento de Projetos de TI
+                  (PUCRS/PMI-RS) e graduação em Ciência da Computação (URI Santiago). Já palestrou mais de 2 vezes na Campus Party/ Latinoware/ FISL.
+                  Ajudou nos eventos TDC/ Tchelinux/ Flisol/ DebianDay. Mentor de Startup Weekend. Da equipe de criação e atuante no GUGP e
+                  GU-Mobile (Sucesu-RS) e do Hackerspace Laboratório Hacker Santiago. Atuante no Grupo Tchelinux. Sócio do Lions Club Santiago Centro.
+                  Outras áreas de interesse estão em Educação, Hackerspaces, Biotecnologia, Bioinformática, Biohacking, Sistemas Operacionais :D
+                </span>
+            </div>
+          </div>
+          <div id="speech-7" class=speech-container>
+            <span class="speech-time">10h30</span>
+            <div class="speech-info">
+                <h3 class="speech-title">Tradução do Debian para Português do Brasil</h3>
+                <span class="speech-description">
+                Esta palestra é uma introdução à tradução do Debian para português do Brasil e um convite para participar da equipe.
+                </span>
+                <h3 class="speaker-name">Adriano Gomes</h3>
+                <span class="speaker-bio">
+                Bacharel em Ciência da Computação, usuário de Software Livre e membro de algumas comunidades, como o SoftwareLivreVS,
+                o Debian-RS e a equipe de tradução do Debian para português do Brasil.
+                </span>
+            </div>
+          </div>
+          <div id="speech-8" class=speech-container>
+            <span class="speech-time">11h10</span>
+            <div class="speech-info">
+                <h3 class="speech-title">NoSql o mundo da persistencia poliglota</h3>
+                <span class="speech-description">
+                NoSql o mundo da persistencia poliglota é uma palestra que vai imergir no mundo do NoSql e entender por que ele vem
+                crescendo cada vez mais e como as grandes empresas e nós mesmos podemos tirar proveito deste novo conceito open source de banco de dados.
+                </span>
+                <h3 class="speaker-name">Waldemar Neto</h3>
+                <span class="speaker-bio">
+                Desenvolvedor, hoje mais na área web. Defensor da divisão de conhecimento, moro em Pelotas, Rio Grande do Sul.
+                Trabalho para uma empresa alemã e também sou contribuidor de projetos de codigo aberto, Alem de mini cursos de
+                workshops tambem palestro sempre tentando somar algo para o pessoal da comunidade em geral.
+                <br>http://walde.co/
+                <br>http://imasters.com.br/perfil/waldemarneto/
+                </span>
+            </div>
+          </div>
+          <div id="speech-4" class=speech-container>
+            <span class="speech-time">11h10</span>
+            <div class="speech-info">
+                <h3 class="speech-title">
+                Software Livre: Socialmente Justo, Economicamente Viável e Tecnologicamente Sustentável</h3>
+                <span class="speech-description">
+                Nesta palestra serão abordados aspectos referentes a história da criação do Movimento Software Livre, a importância do uso de
+                 Softwares Livres ao invés de softwares privativos, legislações referentes ao uso de Softwares Livres no RS e exemplos de algumas
+                 distribuições GNU/Linux.
+                </span>
+                <h3 class="speaker-name">Clayton Dausacker</h3>
+                <span class="speaker-bio">
+                Técnico em Manutenção de Computadores, Ativista do Movimento Software Livre, Usuário GNU, Sócio da Associação Software Livre.Org,
+                Membro Tchelinux - Grupo de Usuários de Software Livre do RS, Acadêmico do Curso de Serviço Social - ULBRA, Palestrante FLISOL 2014,
+                Palestrante Fórum Tchelinux Caxias do Sul 2014, Palestrante Software Freedom Day 2014, Palestrante FISL16
+                </span>
+            </div>
+          </div>
+          <div id="speech-10" class=speech-container>
+            <span class="speech-time">11h10</span>
+            <div class="speech-info">
+                <h3 class="speech-title">O Servidor FTP – Sistema Operacional Linux Centos 6.0</h3>
+                <span class="speech-description">
+                Graduado em Lico - Feevale 2009, Analista de Suporte, em T.I, professor de Informática, Entusiasta Linux - autodidata
+                - 6 anos de experiência com Linux, Debian/Ubuntu/Centos.
+                </span>
+                <h3 class="speaker-name">Ercio Berna</h3>
+                <span class="speaker-bio">
+                O programa de FTP (File Transport Protocol), pode ser utilizado em Sistemas Operacionais de código aberto,
+                paras servidores, sendo que também podem vir pré-instalados, ou serem instalados. Os sistemas Operacionais que
+                utilizam estes programas são: - Unix, Linux Ubuntu, Debian, Centos, Gentoo, Suse, FreeBSD e outros. Existem diversos
+                tipos de programas de transferência de arquivos, como o VSFTPD, PROFTPD, FTPd, PURE-FTPd, VsFTPd, Wu-Ftpd e Wzdftpd emfim
+                será implementado o script de um servidor de FTP, passivo, com armazenamento para unidades RAID, modo raid 1, bem funcional e seguro.
+                </span>
+            </div>
+          </div>
+        <section id="local">
+        <div class="container">
+          <h2 class="subtitle">Local</h2>
+          <p>
+            Faculdade FTEC Novo Hamburgo<br/>
+            R. Silveira Martins, 780 - Centro<br/>
+            Novo Hamburgo - Rio Grande do Sul
+          </p>
+          <div id="map_canvas" style="width: 100%; height: 350px;"></div>
+          <input type="text" id="search-route" class="form-control" placeholder="Digite sua localização">
+          <div id="directions-panel"></div>
+        </div>
+        </section>
+        <section id="apoio">
+            <div class="container">
+                <h2 class="subtitle">Apoio</h2>
+                <ul class="apoio-list">
+                  <li class="apoio-item">
+                    <a href="https://www.facebook.com/Vitrine.Pao" title="Vitrine do Pão" class="apoio-logo apoio-link" target="_blank" style="width:300px">
+                      <img src="images/vitrine_pao.jpg" width="140px" alt="Vitrine do Pão" class="photo"/>
+                    </a>
+                  </li>
+                  <li class="apoio-item">
+                    <a href="http://bierborse.com.br/" title="Bierborse" class="apoio-logo apoio-link" target="_blank" style="width:300px">
+                      <img src="images/bierborse.png" width="140px" alt="Bierborse"/>
+                    </a>
+                  </li>
+                  <li class="apoio-item">
+                    <a href="https://www.ftec.com.br/" title="FTEC" class="apoio-logo apoio-link" target="_blank" style="width:300px">
+                      <img src="images/ftec.png" width="140px" alt="FTEC"/>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+        </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline" id="footer-menu">
+                        <li class="active"><a href="#">TcheLinux</a></li>
+                        <li><a href="#programacao">Programa&ccedil;&atilde;o</a></li>
+                        <li><a href="#palestras">Palestras</a></li>
+                        <li><a href="#local">Local</a></li>
+                        <li><a href="#apoio">Apoio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="github">
+                <a href="https://github.com/alanvelasques/nh2015" target="_blank">
+                    <img src="images/GitHub-Mark-32px.png"/>
+                    <p class="copyright text-muted small">Acesse o TcheLinux Novo Hamburgo 2015 no GitHub</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div style="display:none;">
+        <script type="text/javascript" src="javascript.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.min.js"></script>
+    </div>
+    </body>
+</html>
